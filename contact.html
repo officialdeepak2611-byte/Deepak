@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact ShieldSecure for a free security assessment. Reach us by phone, email, or send a message online." />
+    <title>Contact – ShieldSecure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="site-header"></div>
+
+    <main id="main">
+      <section class="page-header">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">›</span>
+            <span>Contact</span>
+          </nav>
+          <h1>Get in <span class="accent">Touch</span></h1>
+          <p>
+            Tell us about your site and timeline. We'll respond within one business day.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <form class="form" id="contact-form" novalidate>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                  <p class="help" id="name-help" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="company">Company</label>
+                  <input id="company" name="company" type="text" autocomplete="organization" />
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                  <p class="help" id="email-help" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="service">Interested service</label>
+                <select id="service" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Manned guarding</option>
+                  <option>CCTV monitoring</option>
+                  <option>Access control</option>
+                  <option>Rapid response</option>
+                  <option>Corporate security</option>
+                  <option>Event security</option>
+                </select>
+                <p class="help" id="service-help" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="3"
+                  placeholder="Example: Warehouse night patrols (starting next month)."
+                  required
+                ></textarea>
+                <p class="help" id="message-help" aria-live="polite"></p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send message</button>
+                <p class="fineprint">
+                  By sending, you agree we may contact you about this request. No spam.
+                </p>
+              </div>
+            </form>
+
+            <div class="contact-card" aria-label="Company contact details">
+              <div class="contact-card-inner">
+                <h3>Get in touch</h3>
+                <p class="muted">
+                  Prefer calling? We're available 24/7 for urgent requests and scheduling.
+                </p>
+
+                <div class="contact-lines">
+                  <a class="contact-line" href="tel:+10000000000">
+                    <span class="contact-k">Phone</span>
+                    <span class="contact-v">+1 (000) 000‑0000</span>
+                  </a>
+                  <a class="contact-line" href="mailto:ops@shieldsecure.example">
+                    <span class="contact-k">Email</span>
+                    <span class="contact-v">ops@shieldsecure.example</span>
+                  </a>
+                  <div class="contact-line" role="group" aria-label="Location">
+                    <span class="contact-k">Location</span>
+                    <span class="contact-v">Downtown • On-site visits available</span>
+                  </div>
+                </div>
+
+                <div class="divider" aria-hidden="true"></div>
+
+                <p class="muted small">
+                  For emergencies, call immediately. For quotes, send a message with your hours,
+                  address, and site type.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="site-toast"></div>
+
+    <script src="./components.js"></script>
+    <script>initPage("contact");</script>
+    <script src="./script.js"></script>
+    <script src="./smooth-scroll.js"></script>
+  </body>
+</html>
